@@ -6,6 +6,6 @@ package com.bjpowernode.dao;
  */
 public class UserService {
     public void test1() {
-
+        System.out.println("修复了bug");
     }
 }
