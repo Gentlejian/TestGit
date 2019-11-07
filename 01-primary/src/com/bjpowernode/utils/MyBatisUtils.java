@@ -16,6 +16,9 @@ public class MyBatisUtils {
     private static SqlSessionFactory sqlSessionFactory;
 
     public static SqlSession getSqlSession() {
+
+        System.out.println("Git代码。。。。。");
+
         try {
             InputStream is = Resources.getResourceAsStream("mybatis.xml");
             if(sqlSessionFactory == null) {
