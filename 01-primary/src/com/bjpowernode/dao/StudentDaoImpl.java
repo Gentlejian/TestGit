@@ -19,6 +19,9 @@ public class StudentDaoImpl implements IStudentDao {
     public void insertStu(Student student) {
 
         System.out.println("Git操作");
+        System.out.println("Git操作");
+
+
         try {
             sqlSession = MyBatisUtils.getSqlSession();
             sqlSession.insert("insertStudent",student);
