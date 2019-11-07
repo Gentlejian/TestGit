@@ -2,6 +2,7 @@ package com.bjpowernode.dao;
 
 import com.bjpowernode.beans.Student;
 import com.bjpowernode.utils.MyBatisUtils;
+import com.sun.org.apache.xpath.internal.SourceTree;
 import org.apache.ibatis.session.SqlSession;
 
 /**
@@ -10,11 +11,14 @@ import org.apache.ibatis.session.SqlSession;
  */
 public class StudentDaoImpl implements IStudentDao {
 
+
+
     private SqlSession sqlSession;
 
     @Override
     public void insertStu(Student student) {
 
+        System.out.println("Git操作");
         try {
             sqlSession = MyBatisUtils.getSqlSession();
             sqlSession.insert("insertStudent",student);
